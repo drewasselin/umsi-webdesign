@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+
+h1{
+  color: white;
+  font-size: 64px;
+  text-align: center;
+}
+
+h2{
+  color: white;
+  font-size: 32px;
+  text-shadow: 4px 4px 2px black;
+}
+
+p{
+  color: white;
+  font-size: 16px;
+  padding-top: 15px;
+}
+
+div{
+  padding: 30px 50px;
+  min-height: 100px;
+}
+
+#blue{
+  background-color: blue;
+}
+
+#red{
+  background-color: red;
+  text-align: right;
+}
+
+#yellow{
+  background-color: yellow;
+  text-align: right;
+}
+
+#yellow p{
+  color: black;
+}
+
+#yellow h2{
+  color: black;
+  text-shadow: 4px 4px 2px grey;
+}
+
+#green{
+  background-color: green;
+}
