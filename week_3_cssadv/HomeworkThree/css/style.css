@@ -24,7 +24,7 @@ a{
 }
 
 table{
-  border-collapse: separate;
+  border-collapse: separate; // makes background color rounded too - not just border
   border-radius: 10px;
   border: 2px solid black;
 }
@@ -50,6 +50,10 @@ tr:nth-child(even){
 
 tr:hover{
   background-color: #fab9cf;
+}
+
+*:focus{
+  border: 1px solid red;
 }
 
 table tr:first-child th:first-child{
