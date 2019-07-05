@@ -56,10 +56,10 @@ module.exports = {
         browser.verify.cssProperty('body','font-family','"Lucida Grande", sans-serif', 'body text uses font family Lucida Grande and fallback of sans-serif');
         browser.verify.cssProperty('body','color', 'rgba(255, 255, 255, 1)', 'body text is white');
         browser.verify.cssProperty('body', 'background-color', 'rgba(0, 0, 0, 1)', 'body background color is black');
-        browser.verify.cssProperty('#intro h2', 'font-size', '32px', 'all h2 elements are 32px');
-        browser.verify.cssProperty('#intro h2', 'text-shadow', 'rgb(0, 0, 0) 4px 4px 2px', 'all h2 elements have text drop-shadow');
-        browser.verify.cssProperty('#intro p ', 'font-size', '16px', 'all p elelents are 16px');
-        browser.verify.cssProperty('#intro p ', 'padding', '15px 0px 0px', 'all p elelents have 15px padding');
+        browser.verify.cssProperty('#intro h2', 'font-size', '32px', 'all h2 elements are 32px'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
+        browser.verify.cssProperty('#intro h2', 'text-shadow', 'rgb(0, 0, 0) 4px 4px 2px', 'all h2 elements have text drop-shadow'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
+        browser.verify.cssProperty('#intro p ', 'font-size', '16px', 'all p elelents are 16px'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
+        browser.verify.cssProperty('#intro p ', 'padding', '15px 0px 0px', 'all p elelents have 15px padding'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
     },
 
     /* Check that h1 is formatted properly*/
