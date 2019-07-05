@@ -26,10 +26,9 @@ div{
 
 img{
   display: block;
+  margin:auto;
   width: 550px;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
   padding: 10px;
 }
 
