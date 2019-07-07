@@ -8,9 +8,14 @@ body{
     margin: 1.2em;
 }
 
+main{
+  margin-bottom: 100px;
+}
+
 h1{
   color: #c12258;
   font-size: 2em;
+  line-height: 1.5;
 }
 
 p{
@@ -24,7 +29,7 @@ a{
 }
 
 table{
-  border-collapse: separate; // makes background color rounded too - not just border
+  border-collapse: separate; /* makes background color rounded too - not just border */
   border-radius: 10px;
   border: 2px solid black;
 }
