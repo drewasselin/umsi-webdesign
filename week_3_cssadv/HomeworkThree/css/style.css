@@ -4,7 +4,7 @@ body{
     background-repeat: no-repeat;
     background-color: #dddddd;
     color: black;
-    font-size: 14pt;
+    font-size: 18px;
     margin: 1.2em;
 }
 
@@ -19,7 +19,6 @@ h1{
 }
 
 p{
-  font-size: 16px;
   padding-top: 15px;
 }
 
@@ -34,17 +33,16 @@ table{
   border: 2px solid black;
 }
 
-th.colhead{
+.colhead{
   background-color: #7e0830;
   color: white;
-  padding: 5px;
+  padding: 10px;
   vertical-align: middle;
   min-width: 150px;
-  font-size: 1em;
   text-transform: uppercase;
 }
 
-th.rowhead{
+.rowhead{
   border-top: 2px solid black;
 }
 
@@ -66,19 +64,19 @@ tr:hover{
 }
 
 thead tr:first-child th:first-child{
-  border-top-left-radius: 8px;
+  border-top-left-radius: 10px;
 }
 
 thead tr:last-child th:last-child{
-  border-top-right-radius: 8px;
+  border-top-right-radius: 10px;
 }
 
 tbody tr:last-child th:first-child{
-  border-bottom-left-radius: 8px;
+  border-bottom-left-radius: 10px;
 }
 
 tbody tr:last-child td:last-child{
-  border-bottom-right-radius: 8px;
+  border-bottom-right-radius: 10px;
 }
 
 td{
