@@ -1,11 +1,11 @@
 body{
-    font-family: 'Quicksand', sans-serif;
-    background-image: url("../images/pidgeon-background.jpg");
-    background-repeat: no-repeat;
-    background-color: #dddddd;
-    color: black;
-    font-size: 18px;
-    margin: 1.2em;
+  background-color: #dddddd;
+  background-image: url("../images/pidgeon-background.jpg");
+  background-repeat: no-repeat;
+  color: black;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 18px;
+  margin: 1.2em;
 }
 
 main{
@@ -57,6 +57,7 @@ tr:nth-child(even){
 
 tr:hover{
   background-color: #fab9cf;
+  /*add font larger + transition */
 }
 
 *:focus{

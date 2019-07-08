@@ -1,0 +1,60 @@
+body{
+  font-size: 18px;
+  margin: 0 20px;
+  padding:0;
+}
+
+footer{
+  height: 40px;
+  margin: 15px;
+  text-align: center;
+}
+
+
+/* Part 1 Styles */
+
+ol{
+  padding:50px;
+}
+
+ol li{
+  padding: 10px;
+}
+
+ol li:nth-child(10n+0) {
+  margin-bottom: 50px;
+}
+
+ol li:nth-child(even) {
+  background-color: #57a045;
+  color: black;
+  font-weight: bold;
+}
+
+ol li:nth-child(odd) {
+  background-color: #BAEDAD;
+  color: black;
+  font-weight: bold;
+}
+
+ol li:last-child {
+  margin-bottom: 0;
+}
+
+/* Part 2 Styles */
+
+img{
+  border: 10px solid black;
+  display: inline-block;
+  margin: 10px;
+  -webkit-transition: box-shadow 0.5s ease;
+  transition: box-shadow 0.5s ease;
+}
+
+img:hover{
+  box-shadow: 0 0 20px green;
+}
+
+*:focus{
+  box-shadow: 0 0 20px green;
+}
