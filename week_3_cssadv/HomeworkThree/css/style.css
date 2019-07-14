@@ -51,13 +51,17 @@ td{
   text-align: center;
 }
 
+tr{
+  -webkit-transition: background-color 0.5s ease;
+  transition: background-color 0.5s ease;
+}
+
 tr:nth-child(even){
   background-color: #ddd;
 }
 
 tr:hover{
   background-color: #fab9cf;
-  /*add font larger + transition */
 }
 
 *:focus{
