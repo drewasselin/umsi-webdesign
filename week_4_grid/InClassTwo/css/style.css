@@ -1,0 +1,145 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+
+/* Desktop layout */
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px 350px 350px 350px 100px;
+  margin: auto;
+  width: 95vw;
+}
+
+.img-one{
+  background-color: red;
+  grid-column: 3 / -1;
+  grid-row: 1 / auto;
+  /* grid-column-end: 3;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span 2; */
+  overflow: hidden;
+}
+
+.img-two{
+  background-color: white;
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  /* grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 2; */
+  overflow: hidden;
+}
+
+.img-three{
+  background-color: green;
+  grid-column: 3 / -1;
+  grid-row: 2 / auto;
+  /* grid-column-start: 3;
+  grid-column-end: -1;
+  grid-row-start: 2;
+  grid-row-end: 3; */
+  overflow: hidden;
+}
+
+.img-four{
+  background-color: purple;
+  grid-column: 2 / auto;
+  grid-row: 3 / auto;
+  overflow: hidden;
+}
+
+.img-five{
+  background-color: blue;
+  grid-column: 1 / auto;
+  grid-row: 3 / auto;
+  overflow: hidden;
+}
+
+.img-six{
+  background-color: yellow;
+  grid-column: 3 / auto;
+  grid-row: 3 / auto;
+  overflow: hidden;
+}
+
+.img-seven{
+  background-color: black;
+  grid-column: 2 / span 2;
+  grid-row: 4 / span 2;
+  overflow: hidden;
+}
+
+.img-eight{
+  background-color: pink;
+  grid-column: 1 / auto;
+  grid-row: 4 / span 2;
+  overflow: hidden;
+}
+
+.img-nine{
+  background-color: orange;
+  grid-column: 4 / -1;
+  grid-row: 3 / span 3;
+  overflow: hidden;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / span 4;
+  grid-row: 6 / auto;
+  align-self: stretch;
+  justify-self: stretch;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.text-one{
+    background-color: rgba(0,0,0,.5);
+    grid-column-end: 3;
+    grid-column-start: 2;
+    z-index: 1;
+}
+
+/* .text-two{
+  background-color: white;
+}
+
+.text-three{
+  background-color: green;
+}
+
+.text-four{
+  background-color: purple;
+}
+
+.text-five{
+  background-color: blue;
+}
+
+.text-six{
+  background-color: yellow;
+}
+
+.text-seven{
+  background-color: black;
+}
+
+.text-eight{
+  background-color: pink;
+}
+
+.text-nine{
+  background-color: orange;
+} */
