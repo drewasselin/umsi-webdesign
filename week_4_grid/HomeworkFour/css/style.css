@@ -1,0 +1,300 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+  line-height: 1;
+  padding: 50px 0;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  display: inline;
+  padding-right: 20px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover{
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.skip a{
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: white;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip a:focus{
+  top:0px;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+
+@media screen and (min-width: 300px){
+  .container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr ; /* Change to 3 column layout */
+    grid-template-rows: 30px auto auto auto auto auto 100px; /* change to auto, nav size */
+    grid-row-gap: 15px;
+  }
+
+  .nav{
+    background-color: #ddd;
+    grid-column: 1 / -1;
+    grid-row: 1 / auto;
+    text-align: left; /* left instead of right */
+    align-self: center;
+    padding: 20px 0; /* reduce padding*/
+  }
+
+  .head{
+    color: white;
+    height: 400px; /* Parallax effect */
+    background-image: url(../images/header.jpg); /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    grid-column: 1 / -1;
+    grid-row: 2 / auto;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .head p{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 0 100px;
+  }
+
+  .about-image{
+    grid-column: 1 / -1;
+    grid-row: 3 / auto;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  .about{
+    grid-column: 2 / auto;
+    grid-row: 3 / auto;
+  }
+
+  .method-image{
+    grid-column: 1 / -1;
+    grid-row: 4 / auto;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  .method{
+    grid-column: 2 / auto;
+    grid-row: 4 / auto;
+  }
+
+  .clients-image{
+    grid-column: 1 / -1;
+    grid-row: 5 / auto;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  .clients{
+    grid-column: 2 / auto;
+    grid-row: 5 / auto;
+  }
+
+  .contact-image{
+    grid-column: 1 / -1;
+    grid-row: 6 / auto;
+    max-height: 700px;
+    overflow: hidden;
+  }
+
+  .contact{
+    grid-column: 2 / auto;
+    grid-row: 6 / auto;
+  }
+
+  .foot{
+    background-color: black;
+    color: white;
+    grid-column: 1 / -1;
+    grid-row: 7 / auto;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .text-block{
+    justify-self: center;
+    align-self: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .8); /* less transparent */
+    border: 10px solid black;
+  }
+
+}
+
+@media screen and (min-width: 800px){
+  .container{
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 50px auto 100px 500px 100px auto 50px;
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;
+    grid-row-gap: 15px;
+  }
+
+  .nav{
+    background-color: #ddd;
+    grid-column: 1 / -1;
+    grid-row: 1 / auto;
+    text-align: right;
+    align-self: center;
+    padding: 35px 0;
+  }
+
+  .head{
+    color: white;
+    height: 400px; /* Parallax effect */
+    background-image: url(../images/header.jpg); /* Parallax effect */
+    background-repeat: no-repeat; /* Parallax effect */
+    background-attachment: fixed; /* Parallax effect */
+    background-position: center; /* Parallax effect */
+    background-size: cover; /* Parallax effect */
+    grid-column: 1 / -1;
+    grid-row: 2 / auto;
+    overflow: hidden;
+    -webkit-box-pack: center;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .head p{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    padding: 0 100px;
+  }
+
+  .about-image{
+    grid-column: 2 / span 3;
+    grid-row: 3 / auto;
+    overflow: hidden;
+  }
+
+  .about{
+    grid-column: 4 / span 3;
+    grid-row: 3 / auto;
+  }
+
+  .method-image{
+    grid-column: 4 / span 3;
+    grid-row: 4 / auto;
+    overflow: hidden;
+  }
+
+  .method{
+    grid-column: 2 / span 3;
+    grid-row: 4 / auto;
+  }
+
+  .clients-image{
+    grid-column: 2 / span 3;
+    grid-row: 5 / auto;
+    overflow: hidden;
+  }
+
+  .clients{
+    grid-column: 4 / span 3;
+    grid-row: 5 / auto;
+  }
+
+  .contact-image{
+    grid-column: 4 / span 3;
+    grid-row: 6 / auto;
+    overflow: hidden;
+  }
+
+  .contact{
+    grid-column: 2 / span 3;
+    grid-row: 6 / auto;
+  }
+
+  .foot{
+    background-color: black;
+    color: white;
+    grid-column: 1 / -1;
+    grid-row: 7 / auto;
+    justify-self: stretch;
+    align-self: stretch;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  .text-block{
+    justify-self: center;
+    align-self: center;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .7);
+    border: 10px solid black;
+  }
+
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: white;
+    -webkit-transition: initial; /* sets to default setting */
+    transition: initial; /* sets to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0px;
+  }
+}
