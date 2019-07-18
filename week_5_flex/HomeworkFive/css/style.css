@@ -1,0 +1,266 @@
+body{
+  font-family: 'Raleway', sans-serif; /* Test for this*/
+  margin: 0;
+  padding: 0;
+  font-size: 16pt; /* test for this! Make all sizes em or rem */
+  background-image: url('../images/concrete_seamless.png');
+}
+
+h1{
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+h2{
+  font-size: 1.5em;
+  text-align: center;
+  padding: 5px;
+  border-bottom
+}
+
+.skipcont a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skipcont a:focus{
+  top:0;
+}
+
+*:focus{
+  border: 2px solid black;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: 7 / auto;
+  padding: 30px;
+  text-align: center;
+}
+
+
+.head{
+  min-height: 150px;
+  padding: 10px 50px;
+}
+
+@media screen and (min-width: 300px){
+
+  /* Cards! */
+  .pricing{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .card {
+    flex-basis: 400px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
+  }
+
+  .card > header{
+    background: #50C7C7;
+    border: 2px solid #45ADAD;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .card > ul{
+    list-style: none;
+    padding: 0
+  }
+
+  .card > ul li {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .card button{
+    width: 90%;
+    height: 40px;
+    border: 0;
+    margin-left: 12px;
+    border-radius: 7px;
+    background: #45ADAD;
+    color: white;
+    font-size: 1em;
+  }
+
+  .card h3{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+  }
+
+  .card--big{
+    -webkit-transform: initial;
+            transform: initial;
+  }
+
+  /* Gallery! */
+
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 500px;
+  }
+
+  .gallery > img{
+    border: 10px #50C7C7 solid;
+    margin: 10px;
+    width: 300px;
+  }
+
+  /* Navbar */
+
+  .navi{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 3px solid #50C7C7;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+  }
+
+  .nav-item a{
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-item a:hover, a:focus{
+    color: #50C7C7;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+}
+
+
+@media screen and (min-width: 850px){
+
+  /* Cards! */
+  .pricing{
+    min-height: 500px;
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+  }
+
+  .card {
+    flex-basis: 250px;
+    margin: 12px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 0 0 50px 0;
+  }
+
+  .card > header{
+    background: #50C7C7;
+    border: 2px solid #45ADAD;
+    padding: 20px 0;
+    border-radius: 7px 7px 0 0;
+  }
+
+  .card > ul{
+    list-style: none;
+    padding: 0
+  }
+
+  .card > ul li {
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .card button{
+    width: 90%;
+    height: 40px;
+    border: 0;
+    margin-left: 12px;
+    border-radius: 7px;
+    background: #45ADAD;
+    color: white;
+    font-size: 1em;
+  }
+
+  .card h3{
+    font-size: 4em;
+    color: white;
+    text-align: center;
+  }
+
+  .card--big{
+    -webkit-transform: scaleX(1.12);
+            transform: scaleX(1.12);
+  }
+
+  /* Navbar */
+
+  .navi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border-bottom: 3px solid #50C7C7;
+  }
+
+  .nav-links{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  }
+
+  .nav-item a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+  }
+
+  .nav-item a:hover, a:focus{
+    color: #50C7C7;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+  }
+
+}
+
+@media print { /* Intentionaly short so easy to check manually */
+  img{
+    display: none;
+  }
+
+  .navi{
+    display: none;
+  }
+
+}
