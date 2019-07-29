@@ -75,7 +75,7 @@ nav a:hover{
   .container{
     display: grid;
     grid-row-gap: 15px;
-    grid-template-columns: 1fr 5fr 1fr ; /* Change to 3 column layout */
+    grid-template-columns: 1fr 5fr 1fr; /* Change to 3 column layout */
     grid-template-rows: 30px auto auto auto auto auto 100px; /* change to auto, nav size */
     width: 100vw; /* full width - don't think we can check for this */
   }
