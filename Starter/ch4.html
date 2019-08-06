@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 4</title>
+    <style>
+
+    .errorMsg { 
+        color:red;
+        display:none; } 
+    </style>
+    
+    <script type="text/javascript">
+    // YOUR CODE HERE
+    // Do not generate any alerts in your code.  It will mess up the autograder.
+    </script>
+</head>
+<body>
+    <h1>Challenge 4</h1>
+    <!-- Update the form element, but do not add or change any ids or classes. -->
+    <form>
+        <fieldset>
+        <legend>Personal details</legend>
+          <label for="fullname">Full name: </label>
+            <input type="text" name="fullname" id="fullname"><br/>
+       
+            <p class="errorMsg" id="nameMsg">Please enter your name above!</p>
+
+          <label for ="streetaddr"></label>
+            Street Address:
+            <input type="text" name="streetaddr" id="streetaddr">
+       
+            <p class="errorMsg" id="addressMsg">Please enter your street address!</p>
+        </fieldset>
+        <input type="submit" value="Submit it!"> 
+    </form>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge 3</title>
+    <script type="text/javascript">
+    function checkForm(){
+    	if ((document.getElementById("straw").checked == true) || 
+    		(document.getElementById("blue").checked == true))
+    	{     
+        	return true
+    	}
+    	else { alert("Please select your favorite berry!")
+       		return false}
+		} 
+    </script>
+</head>
+<body>
+  <h1> Challenge 3</h1>
+	 <form action="ch4.html" 
+        onsubmit= "return checkForm()">
+      <fieldset>
+        <legend>Radio buttons and Check Boxes</legend>
+        <div>
+          What's your favorite berry?: 
+          <label>
+            <input type="radio" value = "straw" id="straw" name = "fruit"> Strawberries
+          </label>
+          <label>
+            <input type="radio" value = "blue" id="blue" name = "fruit"> Blueberries
+        </label>
+      </div>
+  </fieldset>
+  <input type="submit" value="Pick your fruit!">
+</form>
+</body>
+</html>

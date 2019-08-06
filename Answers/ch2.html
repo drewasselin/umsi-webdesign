@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge Two</title>
+    
+    <script type="text/javascript">
+	function setHomeAddress(){
+		  if (document.getElementById("shippingBox").checked) {
+		      document.getElementById("shipping").value = document.getElementById("billing").value;
+
+		      document.getElementById("shipping").disabled = true;}
+		  else {
+		    document.getElementById("shipping").value = "";
+		    document.getElementById("shipping").disabled = false;}
+	}    
+    </script>
+</head>
+<body>
+    <h1>Challenge Two</h1>
+    <form action="ch3.html">
+      <fieldset>
+        <legend>Billing Information</legend>
+        <div>
+          <label for ="billing">Billing Address:</label><br>
+          <textarea name="billingAdd" id="billing"></textarea>
+          </label>
+        </div>
+
+        <div>
+          <label for ="home">Shipping Information:</label><br>
+          <input type="checkbox" name="useBilling" onclick = "setHomeAddress()" id="shippingBox"> Same as above
+          </label>
+        <br>
+        <textarea name="homeAdd" id="shipping"></textarea>
+        </div>
+        <input type = "submit" value = "Go To Challenge 3">
+      </fieldset>
+</body>
+</html>
