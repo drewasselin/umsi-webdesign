@@ -16,7 +16,10 @@ h2{
   font-size: 1.5em;
   text-align: center;
   padding: 5px;
-  border-bottom
+}
+
+p {
+  padding: 0 30px;
 }
 
 .skipcont a{
@@ -47,6 +50,37 @@ footer{
   text-align: center;
 }
 
+/*
+Keyframes for animation
+
+@-webkit-keyframes logo-wiggle{
+  from {
+    width: 20px;
+  }
+  to {
+    width: 419px;
+  }
+}
+
+@keyframes logo-wiggle{
+  from {
+    width: 20px;
+  }
+  to {
+    width: 419px;
+  }
+} */
+
+#logo{
+  -webkit-animation-name: logo-wiggle;
+          animation-name: logo-wiggle;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
 
 .head{
   min-height: 150px;
@@ -84,7 +118,7 @@ footer{
 
   .card > ul{
     list-style: none;
-    padding: 0
+    padding: 0;
   }
 
   .card > ul li {
@@ -117,10 +151,13 @@ footer{
   /* Gallery! */
 
   .gallery{
+    display: -webkit-box;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
+    -webkit-box-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+            justify-content: center;
     min-height: 500px;
   }
 
@@ -133,18 +170,27 @@ footer{
   /* Navbar */
 
   .navi{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
     background: #fff;
     border-bottom: 3px solid #50C7C7;
   }
 
   .nav-links{
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
     list-style: none;
   }
 
@@ -156,7 +202,8 @@ footer{
   .nav-item a:hover, a:focus{
     color: #50C7C7;
     text-decoration: underline;
-    text-decoration-style: dotted;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
   }
 
 }
@@ -226,17 +273,25 @@ footer{
   /* Navbar */
 
   .navi{
+    display: -webkit-box;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+            align-items: center;
     background: #fff;
     border-bottom: 3px solid #50C7C7;
   }
 
   .nav-links{
+    display: -webkit-box;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+            flex-direction: row;
     list-style: none;
   }
 
@@ -249,7 +304,8 @@ footer{
   .nav-item a:hover, a:focus{
     color: #50C7C7;
     text-decoration: underline;
-    text-decoration-style: dotted;
+    -webkit-text-decoration-style: dotted;
+            text-decoration-style: dotted;
   }
 
 }
