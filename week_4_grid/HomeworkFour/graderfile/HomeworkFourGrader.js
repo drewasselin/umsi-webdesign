@@ -60,8 +60,6 @@ module.exports = {
     'Homework 4: head section formatting for mobile' : function (browser) {
         browser.verify.cssProperty('.head', 'grid-column-start','1', 'head section begins in column 1');
         browser.verify.cssProperty('.head', 'grid-column-end', '-1', 'head section ends in column -1');
-        browser.verify.cssProperty('.head h1', 'font-size', '50px', 'h1 is 50px');
-        browser.verify.cssProperty('.head p', 'font-size', '24px', 'p is 24px');
         browser.verify.cssProperty('.head', 'background-attachment', 'fixed', 'head section background attachment is fixed to create parallax effect');
         browser.verify.cssProperty('.head', 'background-position', '50% 50%', 'head section background position is centered to create parallax effect');
         browser.verify.cssProperty('.head', 'background-repeat', 'no-repeat', 'head section background does not repeat to create parallax effect');
@@ -79,11 +77,9 @@ module.exports = {
         browser.verify.cssProperty('.about', 'grid-row-end', 'auto', 'about section spans the default value');
         browser.verify.cssProperty('.about', 'align-self', 'center', 'about section is centered vertically');
         browser.verify.cssProperty('.about', 'justify-self', 'center', 'about section is centered horizontally');
-        browser.verify.cssProperty('.about h2', 'font-size', '32px', 'h2 is 32px');
-        browser.verify.cssProperty('.about p', 'font-size', '18px', 'p is 18px');
-        browser.verify.cssProperty('.about', 'background-color', 'rgba(255, 255, 255, 0.8)', 'about section background is semi-trasparent white');
-        browser.verify.cssProperty('.about', 'border', '10px solid rgb(0, 0, 0)', 'about section has 10px black border');
-        browser.verify.cssProperty('.about', 'padding', '30px', 'about section has padding of 30px');
+        // browser.verify.cssProperty('.about', 'background-color', 'rgba(255, 255, 255, 0.8)', 'clients section background is semi-trasparent white');
+        // browser.verify.cssProperty('.about', 'border', '10px solid rgb(0, 0, 0)', 'about section has 10px black border');
+        // browser.verify.cssProperty('.about', 'padding', '30px', 'about section has padding of 30px');
         browser.verify.cssProperty('.about-image', 'max-height', '700px', 'about image has max height of 700px');
         browser.verify.cssProperty('.about-image', 'overflow', 'hidden', 'about image overflow hides images');
         browser.expect.element('.about-image img').to.have.attribute('alt').which.matches(alphanum);
@@ -101,11 +97,9 @@ module.exports = {
         browser.verify.cssProperty('.method', 'grid-row-end', 'auto', 'method section spans the default value');
         browser.verify.cssProperty('.method', 'align-self', 'center', 'method section is centered vertically');
         browser.verify.cssProperty('.method', 'justify-self', 'center', 'method section is centered horizontally');
-        browser.verify.cssProperty('.method h2', 'font-size', '32px', 'h2 is 32px');
-        browser.verify.cssProperty('.method p', 'font-size', '18px', 'p is 18px');
-        browser.verify.cssProperty('.method', 'background-color', 'rgba(255, 255, 255, 0.8)', 'method section background is semi-trasparent white');
-        browser.verify.cssProperty('.method', 'border', '10px solid rgb(0, 0, 0)', 'method section has 10px black border');
-        browser.verify.cssProperty('.method', 'padding', '30px', 'method section has padding of 30px');
+        // browser.verify.cssProperty('.method', 'background-color', 'rgba(255, 255, 255, 0.8)', 'method section background is semi-trasparent white');
+        // browser.verify.cssProperty('.method', 'border', '10px solid rgb(0, 0, 0)', 'method section has 10px black border');
+        // browser.verify.cssProperty('.method', 'padding', '30px', 'method section has padding of 30px');
         browser.verify.cssProperty('.method-image', 'max-height', '700px', 'method image has max height of 700px');
         browser.verify.cssProperty('.method-image', 'overflow', 'hidden', 'method image overflow hides images');
         browser.expect.element('.method-image img').to.have.attribute('alt').which.matches(alphanum);
@@ -123,11 +117,9 @@ module.exports = {
         browser.verify.cssProperty('.clients', 'grid-row-end', 'auto', 'clients section spans the default value');
         browser.verify.cssProperty('.clients', 'align-self', 'center', 'clients section is centered vertically');
         browser.verify.cssProperty('.clients', 'justify-self', 'center', 'clients section is centered horizontally');
-        browser.verify.cssProperty('.clients h2', 'font-size', '32px', 'h2 is 32px');
-        browser.verify.cssProperty('.clients p', 'font-size', '18px', 'p is 18px');
-        browser.verify.cssProperty('.clients', 'background-color', 'rgba(255, 255, 255, 0.8)', 'clients section background is semi-trasparent white');
-        browser.verify.cssProperty('.clients', 'border', '10px solid rgb(0, 0, 0)', 'clients section has 10px black border');
-        browser.verify.cssProperty('.clients', 'padding', '30px', 'clients section has padding of 30px');
+        // browser.verify.cssProperty('.clients', 'background-color', 'rgba(255, 255, 255, 0.8)', 'clients section background is semi-trasparent white');
+        // browser.verify.cssProperty('.clients', 'border', '10px solid rgb(0, 0, 0)', 'clients section has 10px black border');
+        // browser.verify.cssProperty('.clients', 'padding', '30px', 'clients section has padding of 30px');
         browser.verify.cssProperty('.clients-image', 'max-height', '700px', 'clients image has max height of 700px');
         browser.verify.cssProperty('.clients-image', 'overflow', 'hidden', 'clients image overflow hides images');
         browser.expect.element('.clients-image img').to.have.attribute('alt').which.matches(alphanum);
@@ -145,11 +137,9 @@ module.exports = {
         browser.verify.cssProperty('.contact', 'grid-row-end', 'auto', 'contact section spans the default value');
         browser.verify.cssProperty('.contact', 'align-self', 'center', 'contact section is centered vertically');
         browser.verify.cssProperty('.contact', 'justify-self', 'center', 'contact section is centered horizontally');
-        browser.verify.cssProperty('.contact h2', 'font-size', '32px', 'h2 is 32px');
-        browser.verify.cssProperty('.contact p', 'font-size', '18px', 'p is 18px');
-        browser.verify.cssProperty('.contact', 'background-color', 'rgba(255, 255, 255, 0.8)', 'contact section background is semi-trasparent white');
-        browser.verify.cssProperty('.contact', 'border', '10px solid rgb(0, 0, 0)', 'contact section has 10px black border');
-        browser.verify.cssProperty('.contact', 'padding', '30px', 'contact section has padding of 30px');
+        // browser.verify.cssProperty('.contact', 'background-color', 'rgba(255, 255, 255, 0.8)', 'contact section background is semi-trasparent white');
+        // browser.verify.cssProperty('.contact', 'border', '10px solid rgb(0, 0, 0)', 'contact section has 10px black border');
+        // browser.verify.cssProperty('.contact', 'padding', '30px', 'contact section has padding of 30px');
         browser.verify.cssProperty('.contact-image', 'max-height', '700px', 'contact image has max height of 700px');
         browser.verify.cssProperty('.contact-image', 'overflow', 'hidden', 'contact image overflow hides images');
         browser.expect.element('.contact-image img').to.have.attribute('alt').which.matches(alphanum);
@@ -226,8 +216,6 @@ module.exports = {
   'Homework 4: head section formatting for desktop' : function (browser) {
       browser.verify.cssProperty('.head', 'grid-column-start','1', 'head section begins in column 1');
       browser.verify.cssProperty('.head', 'grid-column-end', '-1', 'head section ends in column -1');
-      browser.verify.cssProperty('.head h1', 'font-size', '50px', 'h1 is 50px');
-      browser.verify.cssProperty('.head p', 'font-size', '24px', 'p is 24px');
       browser.verify.cssProperty('.head', 'background-attachment', 'fixed', 'head section background attachment is fixed to create parallax effect');
       browser.verify.cssProperty('.head', 'background-position', '50% 50%', 'head section background position is centered to create parallax effect');
       browser.verify.cssProperty('.head', 'background-repeat', 'no-repeat', 'head section background does not repeat to create parallax effect');
