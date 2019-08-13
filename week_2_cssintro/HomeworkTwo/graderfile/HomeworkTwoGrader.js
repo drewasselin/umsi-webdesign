@@ -20,7 +20,7 @@ module.exports = {
     },
 
     /* Check that h2 exists 4 times*/
-    'Homework 2: Only 4 h2 exists' : function (browser) {
+    'Homework 2: Only 5 h2 exists' : function (browser) {
         browser.expect.elements('h2').count.to.equal(5);
     },
 
@@ -52,30 +52,26 @@ module.exports = {
 // ------- Check that new CSS meets spec sheet -------
     /* Check that body is formatted properly */
     'Homework 2: Body CSS formatting' : function (browser) {
-        //browser.expect.elements('body').to.have.css('font-family').which.contains('Lucida Grande');
         browser.verify.cssProperty('body','font-family','"Lucida Grande", sans-serif', 'body text uses font family Lucida Grande and fallback of sans-serif');
         browser.verify.cssProperty('body','color', 'rgba(255, 255, 255, 1)', 'body text is white');
         browser.verify.cssProperty('body', 'background-color', 'rgba(0, 0, 0, 1)', 'body background color is black');
-        browser.verify.cssProperty('#intro h2', 'font-size', '32px', 'all h2 elements are 32px'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
-        browser.verify.cssProperty('#intro h2', 'text-shadow', 'rgb(0, 0, 0) 4px 4px 2px', 'all h2 elements have text drop-shadow'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
-        browser.verify.cssProperty('#intro p ', 'font-size', '16px', 'all p elelents are 16px'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
-        browser.verify.cssProperty('#intro p ', 'padding', '15px 0px 0px', 'all p elelents have 15px padding'); // testing against intro div since this should be included if students write their css properly. Assignment will be written to discourage redundant css.
+        browser.verify.cssProperty('#intro h2', 'font-size', '32px', 'all h2 elements are 32px');
+        browser.verify.cssProperty('#intro h2', 'text-shadow', 'rgb(0, 0, 0) 4px 4px 2px', 'all h2 elements have text drop-shadow');
+        browser.verify.cssProperty('#intro p ', 'font-size', '16px', 'all p elelents are 16px');
+        browser.verify.cssProperty('#intro p ', 'padding', '15px 0px 0px', 'all p elelents have 15px padding');
     },
 
     /* Check that h1 is formatted properly*/
     'Homework 2: h1 formatting' : function (browser) {
-        //browser.expect.elements('h1').to.have.css('font-size').which.equals('64px');
         browser.verify.cssProperty('h1', 'font-size', '64px', 'h1 element has a font size of 64px');
         browser.verify.cssProperty('h1', 'text-align', 'center', 'h1 element is center aligned');
     },
 
     /*Check that image is formatted properly %*/
     'Homework 2: Image formatting' : function (browser) {
-        //browser.expect.elements('img').to.have.css('width').which.equals('550px');
         browser.verify.cssProperty('img', 'display', 'block', 'image is a block element');
         browser.verify.cssProperty('img', 'width', '550px', 'image is 550px wide');
         browser.verify.cssProperty('img', 'height', '442.625px', 'image height is automatically set');
-        //browser.verify.cssProperty('img', 'margin', 'auto', 'margin is set to center the image'); //browser convernts to px so this can't be accurately calculated enough to test against
     },
 
     /* Check that red div is formatted properly */
@@ -116,7 +112,7 @@ module.exports = {
     'Homework 2: Footer formatting' : function (browser) {
         browser.verify.cssProperty('footer', 'text-align', 'center', 'text in footer is center aligned');
         browser.verify.cssProperty('footer', 'padding-bottom', '15px', 'bottom padding of the footer is 15px');
+        browser.end();
     },
-
 
 }
