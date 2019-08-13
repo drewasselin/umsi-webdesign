@@ -272,6 +272,7 @@ module.exports = {
       browser.verify.cssProperty('.contact', 'grid-row-start','6', 'contact section begins in row 6');
       browser.verify.cssProperty('.contact', 'grid-row-end', 'auto', 'contact section spans the default value');
       browser.verify.cssProperty('.contact-image', 'overflow', 'hidden', 'contact image overflow hides images');
+      browser.end();
   },
 
 }
