@@ -164,6 +164,7 @@ module.exports = {
           browser.verify.cssProperty('#image5', 'width', '300px', 'fifth image has a width of 300px');
           browser.expect.element('#image5').to.have.attribute('src', 'fifth image is properly stored in the images folder').which.contains('images/');
           browser.expect.element('#image5').to.have.attribute('alt', 'fifth image has alt text').which.matches(alphanum);
+          browser.end();
       },
 
 }
