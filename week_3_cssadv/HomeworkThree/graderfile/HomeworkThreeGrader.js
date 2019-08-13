@@ -138,6 +138,7 @@ module.exports = {
           browser.pause(2000); // press the tab key to focus on the link
           browser.verify.cssProperty('a', 'border', '1px solid rgb(255, 0, 0)', 'focused elements have a 1px red border')
         });
-    },
+        browser.end();
+    }
 
 }
