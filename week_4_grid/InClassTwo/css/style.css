@@ -9,8 +9,164 @@ h1{
   line-height: 2;
 }
 
+/* Mobile layout */
+@media screen and (min-width: 300px){
+  .container{
+    display: grid;
+    grid-template-columns: 95vw;
+    grid-template-rows: auto;
+    margin: auto;
+    width: 95vw;
+  }
+
+  .img-one{
+    grid-column: auto;
+    grid-row: 1 / auto;
+    overflow: hidden;
+  }
+
+  .img-two{
+    grid-column: auto;
+    grid-row: 2 / auto;
+    overflow: hidden;
+  }
+
+  .img-three{
+    grid-column: auto;
+    grid-row: 3 / auto;
+    overflow: hidden;
+  }
+
+  .img-four{
+    grid-column: auto;
+    grid-row: 4 / auto;
+    overflow: hidden;
+  }
+
+  .img-five{
+    grid-column: auto;
+    grid-row: 5 / auto;
+    overflow: hidden;
+  }
+
+  .img-six{
+    grid-column: auto;
+    grid-row: 6 / auto;
+    overflow: hidden;
+  }
+
+  .img-seven{
+    grid-column: auto;
+    grid-row: 7 / auto;
+    overflow: hidden;
+  }
+
+  .img-eight{
+    grid-column: auto;
+    grid-row: 8 / auto;
+    overflow: hidden;
+  }
+
+  .img-nine{
+    grid-column: auto;
+    grid-row: 9 / auto;
+    overflow: hidden;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    grid-column: auto;
+    grid-row: 10 auto;
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+}
+
+/* Tablet layout */
+@media screen and (min-width: 600px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 350px 350px 350px 350px 350px 350px 100px;
+    margin: auto;
+    width: 95vw;
+  }
+
+  .img-one{
+    grid-column: 1 / auto;
+    grid-row: 1 / auto;
+    overflow: hidden;
+  }
+
+  .img-two{
+    grid-column: 2 / auto;
+    grid-row: 1 / auto;
+    overflow: hidden;
+  }
+
+  .img-three{
+    grid-column: 1 / span 2;
+    grid-row: 2 / auto;
+    overflow: hidden;
+  }
+
+  .img-four{
+    grid-column: 1 / auto;
+    grid-row: 3 / auto;
+    overflow: hidden;
+  }
+
+  .img-five{
+    grid-column: 2 / auto;
+    grid-row: 3 / auto;
+    overflow: hidden;
+  }
+
+  .img-six{
+    grid-column: 1 / span 2;
+    grid-row: 4 / auto;
+    overflow: hidden;
+  }
+
+  .img-seven{
+    grid-column: 1 / span 2;
+    grid-row: 6 / auto;
+    overflow: hidden;
+  }
+
+  .img-eight{
+    grid-column: 2 / auto;
+    grid-row: 5 / auto;
+    overflow: hidden;
+  }
+
+  .img-nine{
+    grid-column: 1 / auto;
+    grid-row: 5 / auto;
+    overflow: hidden;
+  }
+
+  footer{
+    background-color: black;
+    color: white;
+    grid-column: 1 / span 2;
+    grid-row: 7 / auto;
+    align-self: stretch;
+    justify-self: stretch;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
 
 /* Desktop layout */
+@media screen and (min-width: 1000px){
+
 .container{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -20,7 +176,6 @@ h1{
 }
 
 .img-one{
-  background-color: red;
   grid-column: 3 / -1;
   grid-row: 1 / auto;
   /* grid-column-end: 3;
@@ -31,7 +186,6 @@ h1{
 }
 
 .img-two{
-  background-color: white;
   grid-column: 1 / span 2;
   grid-row: 1 / span 2;
   /* grid-column-start: 3;
@@ -42,7 +196,6 @@ h1{
 }
 
 .img-three{
-  background-color: green;
   grid-column: 3 / -1;
   grid-row: 2 / auto;
   /* grid-column-start: 3;
@@ -53,42 +206,36 @@ h1{
 }
 
 .img-four{
-  background-color: purple;
   grid-column: 2 / auto;
   grid-row: 3 / auto;
   overflow: hidden;
 }
 
 .img-five{
-  background-color: blue;
   grid-column: 1 / auto;
   grid-row: 3 / auto;
   overflow: hidden;
 }
 
 .img-six{
-  background-color: yellow;
   grid-column: 3 / auto;
   grid-row: 3 / auto;
   overflow: hidden;
 }
 
 .img-seven{
-  background-color: black;
   grid-column: 2 / span 2;
   grid-row: 4 / span 2;
   overflow: hidden;
 }
 
 .img-eight{
-  background-color: pink;
   grid-column: 1 / auto;
   grid-row: 4 / span 2;
   overflow: hidden;
 }
 
 .img-nine{
-  background-color: orange;
   grid-column: 4 / -1;
   grid-row: 3 / span 3;
   overflow: hidden;
@@ -104,42 +251,4 @@ footer{
   text-align: center;
   padding-top: 20px;
 }
-
-.text-one{
-    background-color: rgba(0,0,0,.5);
-    grid-column-end: 3;
-    grid-column-start: 2;
-    z-index: 1;
 }
-
-/* .text-two{
-  background-color: white;
-}
-
-.text-three{
-  background-color: green;
-}
-
-.text-four{
-  background-color: purple;
-}
-
-.text-five{
-  background-color: blue;
-}
-
-.text-six{
-  background-color: yellow;
-}
-
-.text-seven{
-  background-color: black;
-}
-
-.text-eight{
-  background-color: pink;
-}
-
-.text-nine{
-  background-color: orange;
-} */
