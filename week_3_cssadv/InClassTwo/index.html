@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Font Awesome Accessibility Check</title>
+	<script src="https://kit.fontawesome.com/b71559520c.js"></script>
+	<style>
+		section{
+			border:1px solid black;
+			border-radius: 10px;
+			padding: 1%;
+			margin:2%;
+		}
+	</style>
+</head>
+<body>
+<!--   To use this code in your own files, don't foget to include a link to FontAwesome in the header. https://fontawesome.com/v4.7.0/get-started/ -->
+	<main>
+	<h1>Font Awesome Accessibility Issues</h1>
+	
+	<section>
+      <h2>General Icons</h2>
+		<i class="fas fa-address-book"></i>Default
+		<i class="fas fa-address-book fa-xs"></i>
+		XS
+		<i class="fas fa-address-book fa-md"></i>
+		MD
+		<i class="fas fa-address-book fa-lg"></i>
+		LG
+		<i class="fas fa-address-book fa-2x"></i>
+		x2
+		<i class="fas fa-address-book fa-3x"></i>
+		x3
+		<i class="fas fa-address-book fa-5x"></i>
+		x5
+	</section>
+	
+	<section>	
+	  <h2>Social Media Icons</h2>
+	    <a href = "http://www.pinterest.com"><i class="fab fa-pinterest fa-3x"></i></a><br>
+
+	    <a href = "http://www.linkedin.com"><i class="fab fa-linkedin-in fa-3x"></i></a></br>
+
+	    <a href = "slack.com"><i class="fab fa-slack-hash fa-3x"></i></a></br>
+    </section>
+
+	<section>
+	  <h2> Test It </h2>
+	    <ol>
+			<li>Validate this code with aXe.</li>
+			<li>Use the screen reader. Start by clicking inside the page and then turn on Voice Over by using Cmd-F5.  Then type Cmd-A.</li>
+			<li>Repeat the screen reader, but this time in a different browser. (At least one of which is Safari.)
+			<li>Click on the social media links &#x261D;.</li>	
+		</ol>
+	</section>
+	</main>
+</body>
+</body>
+</html>
