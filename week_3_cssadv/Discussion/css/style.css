@@ -1,0 +1,28 @@
+ol li{
+	color: red;
+	list-style-type: none;
+}
+
+#content li{
+	color: orange; 
+}
+ 
+.list li{
+	color: yellow; 
+}
+
+li p:nth-child(even){
+	color: green; 
+}
+
+p:first-child{
+	color: indigo;
+}
+
+p::last-child{
+	color:blue;
+}
+
+li{
+	color:violet;
+}
