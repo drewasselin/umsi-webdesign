@@ -1,0 +1,262 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  /*Your code here - the list items should all be on the 
+  same line with 20px of padding to the right */
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: /*Your code here - remove the underline*/;
+}
+
+nav a:hover{
+  text-decoration: /*Your code here - add the underline*/;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: /*Your code here - position relative to the parent */;
+  top:      /*Your code here - place 40px higher */;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+/*Your code here*/{
+/*Add the selector and rule to move the skip link to the exact top.*/
+}
+
+/*Your code here*/{
+/*Add the selector and code to put a 2px black border around all elements in focus.*/
+}
+
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 7 / auto;   /*Can you rewrite it?*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+.container{
+
+  /*Your code here
+  The container class should three column grid.
+  Columns 1 and 3: 1/7th of screen;
+  Columns 2: rest of the space;
+  The rows should have 15px of space between them.*/
+
+  /*Provided*/
+  grid-template-rows: 30px auto auto auto auto auto 100px; 
+  width: 100vw; 
+}
+
+.nav{
+   /*Your code here - span the entire top row and 
+     align yourself in the center vertically*/
+
+  /*Provided*/
+  background-color: #ddd;
+  padding: 20px 0; 
+  text-align: left; 
+}
+
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url(); /* Your code here - Link to header.jpg in the images folder */
+  background-position: center; /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover; /* Parallax effect */
+  color: white;
+  height: 400px; /* Parallax effect */
+
+  /*Your code here - cover the entire row*/
+}
+
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
+}
+
+.about-image{
+  /*Your code here 
+  -cover the entire row
+  -set a maximum height of 700px and ensure that the image
+  doesn't appear outside of the border.  
+  (Put in a border temporarily to check.) 
+  */
+
+}
+
+.about{
+  /*Your code here - start in the 2nd column*/
+}
+
+.method-image{
+  /*Your code here 
+  -cover the entire row
+  -set a maximum height of 700px and ensure that the image
+  doesn't appear outside of the border.  
+  */
+}
+
+.method{
+    /*Your code here - start in the 2nd column*/
+}
+
+.clients-image{
+ /*Your code here 
+  -cover the entire row
+  -set a maximum height of 700px and ensure that the image
+  doesn't appear outside of the border.  
+  */
+}
+
+.clients{
+     /*Your code here - start in the 2nd column*/
+}
+
+.contact-image{
+  /*Your code here 
+  -cover the entire row
+  -set a maximum height of 700px and ensure that the image
+  doesn't appear outside of the border.  
+  */
+}
+
+.contact{
+   /*Your code here - start in the 2nd column*/
+}
+
+.text-block{
+
+   /*Your code here - make sure that the middle of the text is 
+   aligned with the middle of the image.*/
+  
+
+  
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+}
+
+
+
+@media /*Your code here - Add the first media query.*/{
+
+  .container{
+    /*Your code here
+    The container class should five column grid.
+    Columns 1 and 5: 50px;
+    Column 3: 500px;
+    Columns 2 and 4: rest of the space;
+    */
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;*/
+  }
+
+  .nav{
+    background-color: #ddd;
+
+    /*Your code here
+    -increase the top and bottom padding to 35px
+    -change the text so that it is right-justified.*/
+  }
+
+  .about-image{
+     /*Your code here -
+     This div should start in the 2nd column.*/
+    }
+
+  .about{
+    /*Your code here -
+     This div covers the 3rd - 5th columns*/
+  }
+
+  .method-image{
+    /*Your code here -
+     This div covers the 3rd - 5th columns */ 
+  }
+
+  .method{
+    /*Your code here -
+     This div covers the 2nd - 4th columns*/
+  }
+
+  .clients-image{
+     /*Your code here -
+     This div covers the 2nd - 4th columns*/ 
+
+  }
+
+  .clients{
+    /*Your code here -
+     This div covers the 3rd - 5th columns */
+  }
+
+  .contact-image{
+    ients-image{
+     /*Your code here -
+     This div covers the 2nd - 4th columns */
+  }
+
+  .contact{
+    /*Your code here -
+     This div covers the 2nd - 4th */
+   }
+
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: /* Your code here - set to default setting */
+    transition: initial; /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
+}
