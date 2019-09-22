@@ -26,8 +26,7 @@ nav ul{
 }
 
 nav li{
-  /*Your code here - the list items should all be on the 
-  same line with 20px of padding to the right */
+  /*Your code here */
 }
 
 nav a{
@@ -72,11 +71,7 @@ footer{
 
 .container{
 
-  /*Your code here
-  The container class should three column grid.
-  Columns 1 and 3: 1/7th of screen;
-  Columns 2: rest of the space;
-  The rows should have 15px of space between them.*/
+  /*Your code here  */
 
   /*Provided*/
   grid-template-rows: 30px auto auto auto auto auto 100px; 
@@ -84,8 +79,7 @@ footer{
 }
 
 .nav{
-   /*Your code here - span the entire top row and 
-     align yourself in the center vertically*/
+   /*Your code here */
 
   /*Provided*/
   background-color: #ddd;
@@ -95,12 +89,12 @@ footer{
 
 header{
   background-attachment: fixed; /* Parallax effect */
-  background-image: url(); /* Your code here - Link to header.jpg in the images folder */
-  background-position: center; /* Parallax effect */
+  background-image: url();      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
-  background-size: cover; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
   color: white;
-  height: 400px; /* Parallax effect */
+  height: 400px;                /* Parallax effect */
 
   /*Your code here - cover the entire row*/
 }
@@ -113,25 +107,16 @@ header p{
 }
 
 .about-image{
-  /*Your code here 
-  -cover the entire row
-  -set a maximum height of 700px and ensure that the image
-  doesn't appear outside of the border.  
-  (Put in a border temporarily to check.) 
-  */
+  /*Your code here */
 
 }
 
 .about{
-  /*Your code here - start in the 2nd column*/
+  /*Your code here */
 }
 
 .method-image{
-  /*Your code here 
-  -cover the entire row
-  -set a maximum height of 700px and ensure that the image
-  doesn't appear outside of the border.  
-  */
+  /*Your code here */
 }
 
 .method{
@@ -139,35 +124,24 @@ header p{
 }
 
 .clients-image{
- /*Your code here 
-  -cover the entire row
-  -set a maximum height of 700px and ensure that the image
-  doesn't appear outside of the border.  
-  */
+ /*Your code here */
 }
 
 .clients{
-     /*Your code here - start in the 2nd column*/
+ /*Your code here */
 }
 
 .contact-image{
-  /*Your code here 
-  -cover the entire row
-  -set a maximum height of 700px and ensure that the image
-  doesn't appear outside of the border.  
-  */
+   /*Your code here */
 }
 
 .contact{
-   /*Your code here - start in the 2nd column*/
+   /*Your code here */
 }
 
 .text-block{
 
-   /*Your code here - make sure that the middle of the text is 
-   aligned with the middle of the image.*/
-  
-
+   /*Your code here */
   
   background-color: rgba(255, 255, 255, .8);
   border: 10px solid black;
@@ -179,63 +153,47 @@ header p{
 @media /*Your code here - Add the first media query.*/{
 
   .container{
-    /*Your code here
-    The container class should five column grid.
-    Columns 1 and 5: 50px;
-    Column 3: 500px;
-    Columns 2 and 4: rest of the space;
-    */
+    /*Your code here */
     grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;*/
   }
 
   .nav{
     background-color: #ddd;
 
-    /*Your code here
-    -increase the top and bottom padding to 35px
-    -change the text so that it is right-justified.*/
+     /*Your code here */
   }
 
   .about-image{
-     /*Your code here -
-     This div should start in the 2nd column.*/
+     /*Your code here */
     }
 
   .about{
-    /*Your code here -
-     This div covers the 3rd - 5th columns*/
+    /*Your code here */
   }
 
   .method-image{
-    /*Your code here -
-     This div covers the 3rd - 5th columns */ 
+    /*Your code here */
   }
 
   .method{
-    /*Your code here -
-     This div covers the 2nd - 4th columns*/
+    /*Your code here */
   }
 
   .clients-image{
-     /*Your code here -
-     This div covers the 2nd - 4th columns*/ 
+    /*Your code here */
 
   }
 
   .clients{
-    /*Your code here -
-     This div covers the 3rd - 5th columns */
+    /*Your code here */
   }
 
   .contact-image{
-    ients-image{
-     /*Your code here -
-     This div covers the 2nd - 4th columns */
+    /*Your code here */
   }
 
   .contact{
-    /*Your code here -
-     This div covers the 2nd - 4th */
+    /*Your code here */
    }
 
 }  /*End the media query*/
@@ -252,7 +210,7 @@ header p{
     position: absolute;
     top: -40px;
     -webkit-transition: /* Your code here - set to default setting */
-    transition: initial; /* Your code here - set to default setting */
+    transition: /* Your code here - set to default setting */
     z-index: 1;
   }
 
