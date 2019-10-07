@@ -1,102 +1,241 @@
-/* 
-html5doctor.com Reset Stylesheet
-v1.6.1
-Last Updated: 2010-09-17
-Author: Richard Clark - http://richclarkdesign.com 
-Twitter: @rich_clark
-*/
-
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+html{
+    scroll-behavior: smooth;
 }
 
-body {
-    line-height:1;
+body{
+  background-color: #ddd;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
 }
 
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section { 
-	display:block;
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li{
+  /*Your code here */
+}
+
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: /*Your code here - remove the underline*/;
+}
+
+nav a:hover{
+  text-decoration: /*Your code here - add the underline*/;
+}
+
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: /*Your code here - position relative to the parent */;
+  top:      /*Your code here - place 40px higher */;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+/*Your code here*/{
+/*Add the selector and rule to move the skip link to the exact top.*/
+}
+
+/*Your code here*/{
+/*Add the selector and code to put a 2px black border around all elements in focus.*/
+}
+
+
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;  /*Can you explain what this does?*/
+  grid-row: 7 / auto;   /*Can you rewrite it?*/
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+.container{
+
+  /*Your code here  */
+
+  /*Provided*/
+  grid-template-rows: 30px auto auto auto auto auto 100px; 
+  width: 100vw; 
+}
+
+.nav{
+   /*Your code here */
+  background-color: #ddd;
+  /*Provided*/
+  background-color: #ddd;
+  padding: 20px 0; 
+  text-align: left; 
+}
+
+nav {
+	padding-top: 0px;
 }
 
 nav ul {
-    list-style:none;
+	list-style-type: none;			
+	margin: 0px;
+	padding: 5px 0px 5px 30px;
+}
+nav li {
+		display: inline;
+		margin-right: 40px;
+}
+nav li a {
+		color: #ffffff;
+}
+nav li a:hover, nav li a.current {
+		color: #000000;
 }
 
-blockquote, q {
-    quotes:none;
+
+header{
+  background-attachment: fixed; /* Parallax effect */
+  background-image: url();      /* Your code here - Link to header.jpg in the images folder */
+  background-position: center;  /* Parallax effect */
+  background-repeat: no-repeat; /* Parallax effect */
+  background-size: cover;       /* Parallax effect */
+  color: white;
+  height: 400px;                /* Parallax effect */
+
+  /*Your code here - cover the entire row*/
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
+header p{
+  color: white;
+  font-size: 24px;
+  padding: 0 100px;
+  text-align: center;
 }
 
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
+.about-image{
+  /*Your code here */
+
 }
 
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
+.about{
+  /*Your code here */
 }
 
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000; 
-    font-style:italic;
-    font-weight:bold;
+.method-image{
+  /*Your code here */
 }
 
-del {
-    text-decoration: line-through;
+.method{
+    /*Your code here - start in the 2nd column*/
 }
 
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
+.clients-image{
+ /*Your code here */
 }
 
-table {
-    border-collapse:collapse;
-    border-spacing:0;
+.clients{
+ /*Your code here */
 }
 
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;   
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
+.contact-image{
+   /*Your code here */
 }
 
-input, select {
-    vertical-align:middle;
+.contact{
+   /*Your code here */
+}
+
+.text-block{
+
+   /*Your code here */
+  
+  background-color: rgba(255, 255, 255, .8);
+  border: 10px solid black;
+  padding: 30px;
+}
+
+
+
+@media /*Your code here - Add the first media query.*/{
+
+  .container{
+    /*Your code here */
+    grid-template-rows: 70px 400px 400px 400px 400px 400px 100px;*/
+  }
+
+  .nav{
+    background-color: #ddd;
+
+     /*Your code here */
+  }
+
+  .about-image{
+     /*Your code here */
+    }
+
+  .about{
+    /*Your code here */
+  }
+
+  .method-image{
+    /*Your code here */
+  }
+
+  .method{
+    /*Your code here */
+  }
+
+  .clients-image{
+    /*Your code here */
+
+  }
+
+  .clients{
+    /*Your code here */
+  }
+
+  .contact-image{
+    /*Your code here */
+  }
+
+  .contact{
+    /*Your code here */
+   }
+
+}  /*End the media query*/
+
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: /* Your code here - set to default setting */
+    transition: /* Your code here - set to default setting */
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
 }

@@ -30,13 +30,33 @@ nav li{
 }
 
 nav a{
-  color: black;
+  color: black!important;
   font-weight: bold;
-  text-decoration: /*Your code here - remove the underline*/;
+  text-decoration: none;
 }
 
 nav a:hover{
-  text-decoration: /*Your code here - add the underline*/;
+  text-decoration: underline;
+}
+
+.skip-container{
+	height:20px;
+	width:120px;
+}
+
+.skip-container:hover .skip{
+	display:block;
+}
+
+.skip{
+	position: absolute;
+	top: 0;
+	left: 0;
+	display:none;
+}
+
+#main{
+	
 }
 
 .skip a{
@@ -89,7 +109,7 @@ footer{
 
 header{
   background-attachment: fixed; /* Parallax effect */
-  background-image: url();      /* Your code here - Link to header.jpg in the images folder */
+  background-image: url('../images/header.jpg');      /* Your code here - Link to header.jpg in the images folder */
   background-position: center;  /* Parallax effect */
   background-repeat: no-repeat; /* Parallax effect */
   background-size: cover;       /* Parallax effect */
@@ -107,36 +127,92 @@ header p{
 }
 
 .about-image{
+
+   margin-top: 30px;
   /*Your code here */
+  position: relative; /* need to set this for position absolute works in .side-center*/
+  float: left;
+  display: inline-block;
+  width: 100%;
 
 }
 
+
 .about{
   /*Your code here */
+	
+  position: absolute;
+    top: 50%;	/* this is the starting point of the element */
+    left: 50%;   /* this is the starting point of the element */
+    width: 60%;
+    height: 40%;
+    -webkit-transform: translate(-50%, -50%);  /* webkit was used for certain browsers / older browsers */
+    transform: translate(-50%, -50%);   /* moves it back to the left or top 50% */ 
+	
 }
 
 .method-image{
   /*Your code here */
+  margin-top: 30px;
+  position: relative; /* need to set this for position absolute works in .side-center*/
+  float: left;
+  display: inline-block;
+  width: 100%;
 }
 
 .method{
     /*Your code here - start in the 2nd column*/
+	
+	position: absolute;
+    top: 50%;	/* this is the starting point of the element */
+    left: 50%;   /* this is the starting point of the element */
+    width: 60%;
+    height: 40%;
+    -webkit-transform: translate(-50%, -50%);  /* webkit was used for certain browsers / older browsers */
+    transform: translate(-50%, -50%);   /* moves it back to the left or top 50% */ 
+	
 }
 
 .clients-image{
  /*Your code here */
+	/*Your code here */
+  margin-top: 30px;
+  position: relative; /* need to set this for position absolute works in .side-center*/
+  float: left;
+  display: inline-block;
+  width: 100%;
+	
 }
 
 .clients{
  /*Your code here */
+	position: absolute;
+    top: 50%;	/* this is the starting point of the element */
+    left: 50%;   /* this is the starting point of the element */
+    width: 60%;
+    height: 40%;
+    -webkit-transform: translate(-50%, -50%);  /* webkit was used for certain browsers / older browsers */
+    transform: translate(-50%, -50%);   /* moves it back to the left or top 50% */ 
 }
 
 .contact-image{
    /*Your code here */
+	 margin-top: 30px;
+  position: relative; /* need to set this for position absolute works in .side-center*/
+  float: left;
+  display: inline-block;
+  width: 100%;
 }
 
 .contact{
    /*Your code here */
+	position: absolute;
+    top: 50%;	/* this is the starting point of the element */
+    left: 50%;   /* this is the starting point of the element */
+    width: 60%;
+    height: 40%;
+    -webkit-transform: translate(-50%, -50%);  /* webkit was used for certain browsers / older browsers */
+    transform: translate(-50%, -50%);   /* moves it back to the left or top 50% */ 
 }
 
 .text-block{
@@ -148,7 +224,12 @@ header p{
   padding: 30px;
 }
 
-
+@media screen and (max-width: 39.9375em) {
+	.text-block{
+		height: 600px;	
+	}
+	
+}
 
 @media /*Your code here - Add the first media query.*/{
 
